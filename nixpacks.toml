@@ -1,8 +1,0 @@
-[phases.setup]
-nixPkgs = ["python399"]
-
-[phases.install]
-cmds = ["pip install -r requirements.txt"]
-
-[start]
-cmd = "gunicorn backend.wsgi:application"
