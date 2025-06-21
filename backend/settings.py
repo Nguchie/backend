@@ -139,6 +139,9 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = config('EMAIL_HOST_USER')  # Same as EMAIL_HOST_USER
 
 
+CORS_ALLOW_ALL_ORIGINS = False
 
-# Allow all origins for development (restrict in production)
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://stagefx.us",  # your frontend domain
+
+]
